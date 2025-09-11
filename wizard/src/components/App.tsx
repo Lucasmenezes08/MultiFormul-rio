@@ -1,10 +1,18 @@
-function App() {
+import { BrowserRouter , Route , Routes } from "react-router-dom"
+import Home from "./layout/home"
+
+
+
+export default function App() {
 
   return (
-    <section>
 
-    </section>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+    </Routes>
+  </BrowserRouter>
   )
 }
 
-export default App
+
