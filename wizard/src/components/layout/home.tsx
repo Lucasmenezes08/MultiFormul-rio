@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
 import { CiCircleCheck } from "react-icons/ci";
 
+
+
+
 export default function Home (){
+
     return (
         <section className="w-full h-screen flex flex-col justify-around items-center py-5">
             <section className="flex flex-col justify-center items-center gap-6">
@@ -13,7 +18,7 @@ export default function Home (){
             </section>
             
 
-            <button className=" flex items-center justify-center w-50 h-15 bg-black text-white text-lg rounded-xl cursor-pointer ">Iniciar Pesquisa</button>
+            <Link to="/form" className={`flex items-center justify-center w-50 h-15 bg-black text-white text-lg rounded-2xl cursor-pointer`}>Iniciar Pesquisa </Link>
 
 
         </section>

@@ -1,5 +1,6 @@
 import { BrowserRouter , Route , Routes } from "react-router-dom"
 import Home from "./layout/home"
+import FormLayout from "../routes/formLayout"
 
 
 
@@ -10,7 +11,8 @@ export default function App() {
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-    </Routes>
+      <Route path="/form" element={<FormLayout/>}/>
+     </Routes>
   </BrowserRouter>
   )
 }
