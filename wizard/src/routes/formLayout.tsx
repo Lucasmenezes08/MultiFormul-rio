@@ -30,7 +30,7 @@ export default function FormLayout (){
     }
 
     return (
-        <section className="">
+        <section className="w-full h-screen flex justify-center items-center">
             {renderCurrentStep()}
         </section>
     )
